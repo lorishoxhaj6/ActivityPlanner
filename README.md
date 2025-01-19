@@ -1,4 +1,5 @@
 # README: Laboratorio di Architettura degli Elaboratori
+https://cdn.univr.it/o/aol-theme/images/logo-univr-colori-80.png
 
 ## Descrizione del Progetto
 Questo progetto consiste nello sviluppo di un software per la pianificazione delle attività di un sistema produttivo. L'obiettivo è schedulare la produzione di un massimo di 10 prodotti nelle successive 100 unità di tempo ("slot temporali"), considerando parametri come identificativo, durata, scadenza e priorità di ciascun prodotto.
