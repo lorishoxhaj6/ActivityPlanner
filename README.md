@@ -1,5 +1,9 @@
 # 🛠️ Laboratorio di Architettura degli Elaboratori
+![Logo Università di Verona](https://www.univr.it/documents/20142/0/A-Logo_Univr_Rettore_2016-02.png/c6839c11-83c2-cec9-308e-828dc4b43620?t=1552921491487) 
 
+**Progetto Universitario - Università degli Studi di Verona**  
+_Corso di Architettura degli Elaboratori_  
+_Autori: [Loris Hoxhaj, Mattia Nicolis]_  
 ## Elaborato Assembly - A.A. 2023/2024
 
 Benvenuti nel progetto per la pianificazione delle attività di un sistema produttivo! Questo README ti guiderà attraverso i dettagli del progetto, l'uso del software e la struttura dei file.
