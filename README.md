@@ -1,52 +1,65 @@
-🛠️ Laboratorio di Architettura degli Elaboratori
-Elaborato Assembly - A.A. 2023/2024
+# 🛠️ Laboratorio di Architettura degli Elaboratori
+
+## Elaborato Assembly - A.A. 2023/2024
+
 Benvenuti nel progetto per la pianificazione delle attività di un sistema produttivo! Questo README ti guiderà attraverso i dettagli del progetto, l'uso del software e la struttura dei file.
 
-📝 Descrizione del Progetto
+---
+
+## 📝 Descrizione del Progetto
+
 Il progetto consiste nello sviluppo di un programma in Assembly per gestire la pianificazione delle attività di un sistema produttivo.
-L'obiettivo è schedulare la produzione di 10 prodotti nei successivi 100 slot temporali, minimizzando eventuali penalità dovute a ritardi.
 
+### Obiettivo
+Schedulare la produzione di 10 prodotti nei successivi 100 slot temporali, minimizzando eventuali penalità dovute a ritardi.
+
+### Specifiche dei Prodotti
 Ogni prodotto è descritto da:
+- **Identificativo**: un numero compreso tra 1 e 127
+- **Durata**: da 1 a 10 slot temporali
+- **Scadenza**: compresa tra 1 e 100
+- **Priorità**: da 1 a 5
 
-Identificativo (1-127)
-Durata (1-10 slot temporali)
-Scadenza (1-100)
-Priorità (1-5)
-💡 Penalità: Per ogni unità di tempo di ritardo, la penalità è calcolata come priorità × ritardo.
+### Penalità
+Per ogni unità di tempo di ritardo, la penalità è calcolata come:
+**Priorità × Ritardo**
 
-🚀 Come Utilizzare il Programma
-Esecuzione
-Esegui il programma specificando il file degli ordini:
+---
 
-bash
-Copia
-Modifica
+## 🚀 Come Utilizzare il Programma
+
+### Esecuzione
+Per eseguire il programma, specifica il file degli ordini utilizzando il seguente comando:
+
+```bash
 pianificatore <percorso del file degli ordini>
-Esempio:
+```
 
-bash
-Copia
-Modifica
+#### Esempio:
+```bash
 pianificatore Ordini.txt
+```
+
 Puoi anche specificare un file di output per salvare i risultati:
 
-bash
-Copia
-Modifica
+```bash
 pianificatore Ordini.txt Pianificazione.txt
-Menu Principale
+```
+
+### Menu Principale
 Dopo aver caricato gli ordini, il programma ti chiederà di scegliere un algoritmo di pianificazione:
-1️⃣ Earliest Deadline First (EDF)
-2️⃣ Highest Priority First (HPF)
+1. **Earliest Deadline First (EDF)**
+2. **Highest Priority First (HPF)**
 
 Inserisci il numero corrispondente all'algoritmo desiderato.
 
-📂 Struttura del Progetto
+---
+
+## 📂 Struttura del Progetto
+
 Ecco come è organizzata la cartella del progetto:
 
-python
-Copia
-Modifica
+```
 VRXXXXXX_VRXXXXXX/
 ├── src/          # Codice sorgente
 ├── obj/          # File oggetto (vuoto inizialmente)
@@ -58,37 +71,46 @@ VRXXXXXX_VRXXXXXX/
 │   ├── Both.txt  # Penalità 0 con entrambi gli algoritmi
 │   ├── None.txt  # Penalità >0 con entrambi gli algoritmi
 ├── Relazione.pdf # Documentazione del progetto
-📊 Output Atteso
+```
+
+---
+
+## 📊 Output Atteso
+
 Dopo aver scelto un algoritmo, il programma stamperà:
+- **Ordine di pianificazione**: formato `ID:Inizio`
+- **Conclusione**: l'unità di tempo in cui termina la produzione
+- **Penalty**: la somma delle penalità totali
 
-Ordine di pianificazione (formato: ID:Inizio)
-Conclusione: l'unità di tempo in cui termina la produzione.
-Penalty: la somma delle penalità totali.
-Esempio con EDF:
-
-makefile
-Copia
-Modifica
+#### Esempio con EDF:
+```
 Pianificazione EDF:  
 4:0  
 12:10  
 Conclusione: 17  
-Penalty: 0  
-Esempio con HPF:
+Penalty: 0
+```
 
-makefile
-Copia
-Modifica
+#### Esempio con HPF:
+```
 Pianificazione HPF:  
 12:0  
 4:17  
 Conclusione: 17  
-Penalty: 20  
-🛠️ Compilazione
-Per compilare il progetto, usa il comando:
+Penalty: 20
+```
 
-bash
-Copia
-Modifica
+---
+
+## 🛠️ Compilazione
+
+Per compilare il progetto, utilizza il comando:
+
+```bash
 make
-Il file eseguibile sarà salvato nella cartella bin/.
+```
+
+Il file eseguibile verrà salvato nella cartella `bin/`.
+
+---
+
