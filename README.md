@@ -1,4 +1,4 @@
-# 🛠️ Laboratorio di Architettura degli Elaboratori
+#  Laboratorio di Architettura degli Elaboratori
 ![Logo Università di Verona](https://www.univr.it/documents/20142/0/A-Logo_Univr_Rettore_2016-02.png/c6839c11-83c2-cec9-308e-828dc4b43620?t=1552921491487) 
 
 **Progetto Universitario - Università degli Studi di Verona**  
@@ -10,7 +10,7 @@ Benvenuti nel progetto per la pianificazione delle attività di un sistema produ
 
 ---
 
-## 📝 Descrizione del Progetto
+##  Descrizione del Progetto
 
 Il progetto consiste nello sviluppo di un programma in Assembly per gestire la pianificazione delle attività di un sistema produttivo.
 
@@ -30,7 +30,7 @@ Per ogni unità di tempo di ritardo, la penalità è calcolata come:
 
 ---
 
-## 🚀 Come Utilizzare il Programma
+##  Come Utilizzare il Programma
 
 ### Esecuzione
 Per eseguire il programma, specifica il file degli ordini utilizzando il seguente comando:
@@ -59,7 +59,7 @@ Inserisci il numero corrispondente all'algoritmo desiderato.
 
 ---
 
-## 📂 Struttura del Progetto
+##  Struttura del Progetto
 
 Ecco come è organizzata la cartella del progetto:
 
@@ -79,7 +79,7 @@ VRXXXXXX_VRXXXXXX/
 
 ---
 
-## 📊 Output Atteso
+##  Output Atteso
 
 Dopo aver scelto un algoritmo, il programma stamperà:
 - **Ordine di pianificazione**: formato `ID:Inizio`
